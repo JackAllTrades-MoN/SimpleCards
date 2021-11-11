@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SimpleCards/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/SimpleCards/static/js/main.1537fd07.chunk.js",
+    "main.js.map": "/SimpleCards/static/js/main.1537fd07.chunk.js.map",
+    "runtime-main.js": "/SimpleCards/static/js/runtime-main.68ed08c0.js",
+    "runtime-main.js.map": "/SimpleCards/static/js/runtime-main.68ed08c0.js.map",
+    "static/js/2.e99bbd43.chunk.js": "/SimpleCards/static/js/2.e99bbd43.chunk.js",
+    "static/js/2.e99bbd43.chunk.js.map": "/SimpleCards/static/js/2.e99bbd43.chunk.js.map",
+    "static/js/3.1a257d16.chunk.js": "/SimpleCards/static/js/3.1a257d16.chunk.js",
+    "static/js/3.1a257d16.chunk.js.map": "/SimpleCards/static/js/3.1a257d16.chunk.js.map",
+    "index.html": "/SimpleCards/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/SimpleCards/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.e99bbd43.chunk.js.LICENSE.txt": "/SimpleCards/static/js/2.e99bbd43.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68ed08c0.js",
+    "static/js/2.e99bbd43.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.1537fd07.chunk.js"
+  ]
+}
