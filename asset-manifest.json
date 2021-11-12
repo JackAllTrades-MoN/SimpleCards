@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/SimpleCards/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/SimpleCards/static/js/main.38caf019.chunk.js",
-    "main.js.map": "/SimpleCards/static/js/main.38caf019.chunk.js.map",
-    "runtime-main.js": "/SimpleCards/static/js/runtime-main.cbc9f6cd.js",
-    "runtime-main.js.map": "/SimpleCards/static/js/runtime-main.cbc9f6cd.js.map",
-    "static/js/2.ebcceaae.chunk.js": "/SimpleCards/static/js/2.ebcceaae.chunk.js",
-    "static/js/2.ebcceaae.chunk.js.map": "/SimpleCards/static/js/2.ebcceaae.chunk.js.map",
-    "static/js/3.9b49eb5b.chunk.js": "/SimpleCards/static/js/3.9b49eb5b.chunk.js",
-    "static/js/3.9b49eb5b.chunk.js.map": "/SimpleCards/static/js/3.9b49eb5b.chunk.js.map",
+    "main.js": "/SimpleCards/static/js/main.2ec8e214.chunk.js",
+    "main.js.map": "/SimpleCards/static/js/main.2ec8e214.chunk.js.map",
+    "runtime-main.js": "/SimpleCards/static/js/runtime-main.7b163eb4.js",
+    "runtime-main.js.map": "/SimpleCards/static/js/runtime-main.7b163eb4.js.map",
+    "static/js/2.cb6635dc.chunk.js": "/SimpleCards/static/js/2.cb6635dc.chunk.js",
+    "static/js/2.cb6635dc.chunk.js.map": "/SimpleCards/static/js/2.cb6635dc.chunk.js.map",
+    "static/js/3.b9a41d57.chunk.js": "/SimpleCards/static/js/3.b9a41d57.chunk.js",
+    "static/js/3.b9a41d57.chunk.js.map": "/SimpleCards/static/js/3.b9a41d57.chunk.js.map",
     "index.html": "/SimpleCards/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/SimpleCards/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.ebcceaae.chunk.js.LICENSE.txt": "/SimpleCards/static/js/2.ebcceaae.chunk.js.LICENSE.txt"
+    "static/js/2.cb6635dc.chunk.js.LICENSE.txt": "/SimpleCards/static/js/2.cb6635dc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cbc9f6cd.js",
-    "static/js/2.ebcceaae.chunk.js",
+    "static/js/runtime-main.7b163eb4.js",
+    "static/js/2.cb6635dc.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.38caf019.chunk.js"
+    "static/js/main.2ec8e214.chunk.js"
   ]
 }
