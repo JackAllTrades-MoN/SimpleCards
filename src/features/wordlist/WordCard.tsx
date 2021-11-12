@@ -5,13 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
-import { DictEntry } from './api';
-
-export interface Word {
-    name: string,
-    description?: DictEntry[],
-    cnt: number
-}
+import { Word } from '../../common/word';
 
 export interface WordCardProps {
     word: Word,
