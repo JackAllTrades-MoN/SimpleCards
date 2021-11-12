@@ -7,11 +7,12 @@ import Fab from '@mui/material/Fab';
 import DownloadIcon from '@mui/icons-material/Download';
 import UploadIcon from '@mui/icons-material/Upload';
 import AddIcon from '@mui/icons-material/Add';
+import Stack from '@mui/material/Stack';
 import withStyles, {WithStylesProps} from 'react-jss';
 import { searchDict } from './api';
 import { WordInput } from './WordInput';
 import { Word, WordCard } from './WordCard';
-import { Stack, Typography } from '@mui/material';
+import { UsageMessage } from './UsageMessage';
 
 const KEY_LOCAL_STORAGE='cards.words';
 
@@ -54,14 +55,6 @@ const WordList = (props: WordListProps) => {
         );
       })}
     </Grid>
-  );
-}
-
-const UsageMessage = () => {
-  return (
-    <Typography>
-      Type any key or click the add button below to add new word.
-    </Typography>
   );
 }
 
