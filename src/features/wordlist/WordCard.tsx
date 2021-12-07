@@ -14,13 +14,15 @@ export interface WordCardProps {
 
 export const WordCard = (props: WordCardProps) => {
     const descr = props.word.description?.map(
-      entry => <div>
-        {entry.meanings.map(meaning => <div>
+      (entry, index) => <div>
+        {entry.meanings.map(meaning => <div key={index}>
           {`(${meaning.partOfSpeech})`}<br />
-          {meaning.definitions.map(ddef => <div>
-            {`- ${ddef.definition}`}<br />
-            {`e.g., ${ddef.example}`}
-          </div>)}
+          {meaning.definitions.map(
+            (ddef, index) => (
+              <div key={index}>
+                {`- ${ddef.definition}`}<br />
+                {`e.g., ${ddef.example}`}
+              </div>))}
         </div>)}
       </div>
     );

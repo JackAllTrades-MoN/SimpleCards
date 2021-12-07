@@ -45,6 +45,7 @@ export const addWord = (name: string): AppThunk =>
                 if (result.status === 200) {
                     dispatch(wordListSlice.actions.insertWord(
                         {
+                            id: words.reduce((a, b) => Math.max(a, b.id), 0) + 1,
                             name: name,
                             description: result.data,
                             cnt: 0
@@ -52,7 +53,11 @@ export const addWord = (name: string): AppThunk =>
                     ))
                 } else {
                     dispatch(wordListSlice.actions.insertWord(
-                        {name: name, cnt: 0}
+                        {
+                            id: words.reduce((a, b) => Math.max(a, b.id), 0) + 1,
+                            name: name,
+                            cnt: 0
+                        }
                     ))
                 }
             },

@@ -9,12 +9,13 @@ import Stack from '@mui/material/Stack'
 import withStyles, {WithStylesProps} from 'react-jss'
 import { WordInput } from './features/WordInput'
 import { Notification } from './features/notification/Notification'
-import { useAppDispatch } from './app/hooks'
 import { WordList } from './features/wordlist/WordList'
-import { addWord } from './features/wordlist/wordListSlice'
+import { useAppSelector } from './app/hooks'
+import { selectWordList } from './features/wordlist/wordListSlice'
 
 const styles = {
   app: {
+    padding: "20px",
     "& .btns": {
       position: 'fixed',
       top: 'auto',
@@ -31,8 +32,8 @@ interface IProps extends WithStylesProps<typeof styles> {
 
 function App(props: IProps) {
   const { classes } = props;
-  const dispatch = useAppDispatch();
   const [windowHeight, setWindowHeight] = useState<number>(0);
+  const words = useAppSelector(selectWordList);
 
   useEffect(() => {
     setWindowHeight(window.outerHeight);    
@@ -43,30 +44,51 @@ function App(props: IProps) {
 
   const [bdopen, setBdopen] = useState<boolean>(false);
 
+  const closeBackDrop = () => {
+    setBdopen(false);
+    (document.activeElement as HTMLElement)?.blur();
+    document.getElementById('app-main')?.focus();
+  };
+
+  const openBackDrop = () => {
+    setBdopen(true)
+  };
+
+  const downloadJson = async () => {
+    const blob = new Blob([JSON.stringify(words)], {type:'application/json'});
+    const link = document.createElement('a');
+    link.href = await URL.createObjectURL(blob);
+    link.download = 'words.json';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <div
+      id="app-main"
       tabIndex={-1}
       className={classes.app}
-      onKeyDown={() => {setBdopen(true)}}
+      onKeyDown={openBackDrop}
       style={{height: windowHeight}}
     >
       <Backdrop
         open={bdopen}
-        onClick={() => setBdopen(false)}
+        onClick={closeBackDrop}
       >
-        <WordInput setWord={(word: string) => dispatch(addWord(word))} />
+        <WordInput isVisible={bdopen} />
       </Backdrop>
       <Notification />
       <WordList />
       <Stack direction="row" spacing={2} className="btns">
-        <Fab color="primary">
-          <AddIcon />
-        </Fab>
-        <Fab color="secondary">
+        <Fab color="secondary" onClick={downloadJson}>
           <DownloadIcon />
         </Fab>
         <Fab color="secondary">
           <UploadIcon />
+        </Fab>
+        <Fab color="primary" onClick={openBackDrop}>
+          <AddIcon />
         </Fab>
       </Stack>
     </div>

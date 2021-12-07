@@ -6,12 +6,15 @@ import { close, selectNotification } from './notificationSlice';
 export const Notification = () => {
     const {open, message} = useAppSelector(selectNotification);
     const dispatch = useAppDispatch();
+    const closeSnackBar = () => {
+      dispatch(close())
+    }
     return (
         <Snackbar
             anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
             open={open}
-            onClose={() => dispatch(close)}
-            autoHideDuration={10}
+            onClose={closeSnackBar}
+            autoHideDuration={5000}
         >
           <Alert variant="filled" severity="error">
             {message}

@@ -16,7 +16,7 @@ export const WordList = () => {
       if(saved) {
         dispatch(setWords(JSON.parse(saved)))
       }
-    }, []);
+    }, [dispatch]);
 
     useEffect(() => {
       localStorage.setItem(
@@ -30,7 +30,7 @@ export const WordList = () => {
         <Grid container sx={{width: "100%", padding: "40px"}} spacing={2}>
         {words.map((word) => {
           return (
-            <Grid item xs={3}>
+            <Grid item xs={3} key={word.id}>
               <WordCard
                 word={word}
                 deleteEntry={(name: string) => dispatch(deleteWord(name))}
