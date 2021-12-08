@@ -30,7 +30,7 @@ export const WordList = () => {
         <Grid container sx={{width: "100%", padding: "40px"}} spacing={2}>
         {words.map((word) => {
           return (
-            <Grid item xs={3} key={word.id}>
+            <Grid item xs={12} sm={3} key={word.id}>
               <WordCard
                 word={word}
                 deleteEntry={(name: string) => dispatch(deleteWord(name))}
