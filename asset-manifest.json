@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SimpleCards/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/SimpleCards/static/js/main.6736bdea.chunk.js",
-    "main.js.map": "/SimpleCards/static/js/main.6736bdea.chunk.js.map",
+    "main.js": "/SimpleCards/static/js/main.0242233c.chunk.js",
+    "main.js.map": "/SimpleCards/static/js/main.0242233c.chunk.js.map",
     "runtime-main.js": "/SimpleCards/static/js/runtime-main.28d64dc3.js",
     "runtime-main.js.map": "/SimpleCards/static/js/runtime-main.28d64dc3.js.map",
     "static/js/2.c54df75b.chunk.js": "/SimpleCards/static/js/2.c54df75b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.28d64dc3.js",
     "static/js/2.c54df75b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.6736bdea.chunk.js"
+    "static/js/main.0242233c.chunk.js"
   ]
 }
